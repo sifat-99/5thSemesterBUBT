@@ -1,9 +1,9 @@
 package bd.edu.bubt.cse;
 
 public abstract class Vehicle implements VehicleFace {
-    protected int speed;
+    protected double speed;
 
-    public int getsSpeeds() {
+    public double getsSpeeds() {
         return speed;
     }
 

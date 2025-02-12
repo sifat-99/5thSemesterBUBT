@@ -1,14 +1,13 @@
 package bd.edu.bubt.cse;
 
-public class Car extends LandVehicle {
+public  class Car extends LandVehicle {
 
-    @Override
+
     public void accelerate() {
-
+        System.out.println("Car Acceleration Maxed Out");
     }
-
-    @Override
     public void deAccelerate() {
-
+        System.out.println("Acceleration down");
     }
+
 }

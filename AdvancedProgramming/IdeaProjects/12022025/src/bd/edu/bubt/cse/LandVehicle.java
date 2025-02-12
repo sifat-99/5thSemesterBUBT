@@ -10,12 +10,16 @@ public abstract class LandVehicle extends Vehicle{
     public void setNoOfWheels(int noOfWheels) {
         this.noOfWheels = noOfWheels;
     }
-
-    public void start(){
-        System.out.println("Bhoom Bhoom.....!!");
+    @Override
+    public void start() {
+            System.out.printf("Bhoom Bhoom.....!! at ");
+            System.out.println(String.valueOf(getsSpeeds()));
+            System.out.println(noOfWheels);
     }
 
+@Override
     public void stop(){
         System.out.println("Zeez...!");
     }
+
 }
