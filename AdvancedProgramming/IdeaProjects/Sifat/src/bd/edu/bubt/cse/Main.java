@@ -16,6 +16,8 @@ public class Main {
     Defender defender2 = new Defender();
     Defender defender3 = new Defender();
 
+    // Testing
+
     striker.setName("Lionel Messi");
     striker.setAge(37);
     striker.setJerseyNumber(10);
