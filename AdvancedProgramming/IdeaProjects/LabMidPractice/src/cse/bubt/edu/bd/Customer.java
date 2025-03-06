@@ -12,12 +12,7 @@ package cse.bubt.edu.bd;
             private BookStall currentStall;
 
             public Customer() {
-                this.name = "";
-                this.nationalID = "";
-                this.deliveryAddress = "";
-                this.contactInfo = "";
-                this.purchasedBookList = new ArrayList<>();
-                this.currentStall = null;
+
             }
 
             public Customer(String name, String nationalID, String deliveryAddress, String contactInfo) {

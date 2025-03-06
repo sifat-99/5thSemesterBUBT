@@ -7,10 +7,7 @@ package cse.bubt.edu.bd;
             private double price;
 
             public Book() {
-                this.name = "";
-                this.author = "";
-                this.numberOfCopiesAvailable = 0;
-                this.price = 0.0;
+
             }
 
             public Book(String name, String author, int numberOfCopiesAvailable, double price) {

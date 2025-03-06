@@ -11,11 +11,7 @@ package cse.bubt.edu.bd;
             private List<Book> bookList;
 
             public BookStall() {
-                this.name = "";
-                this.address = "";
-                this.contactInfo = "";
-                this.balance = 0.0;
-                this.bookList = new ArrayList<>();
+
             }
 
             public BookStall(String name, String address, String contactInfo, List<Book> bookList) {
