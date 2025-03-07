@@ -3,7 +3,7 @@ package vehicle;
 public class ElectricCar implements Vehicle,Electric{
     protected double remainBattery;
     @Override
-    public double getBettery() {
+    public double getBattery() {
         return remainBattery;
     }
 
