@@ -1,3 +1,0 @@
-interface D{
-    void showB();
-}
