@@ -1,0 +1,42 @@
+.MODEL SMALL
+.STACK 100H
+.DATA   
+IN1 DB "ENTER YOUR AGE:$"
+OUT1 DB "YOU CAN VOTE YEEE1!!$"
+OUT2 DB "YOUR'E BABY OLELEEE$"
+.CODE
+MAIN PROC       
+    MOV AX,@DATA
+    MOV DS,AX
+    
+    MOV AH,9
+    LEA DX,IN1
+    INT 21H
+    MOV AH,1
+    INT 21H
+    MOV BL,AL
+    SUB BL,48   
+    
+    MOV AH,2
+    MOV DL,13
+    INT 21H
+    MOV DL,10
+    INT 21H
+    
+    MOV CL,8
+    CMP BL,CL
+    JGE LABEL1:
+    
+    MOV AH,9
+    LEA DX,OUT2
+    INT 21H
+    JMP EXIT:
+    
+    LABEL1: 
+    MOV AH,9
+    LEA DX,OUT1
+    INT 21H  
+    
+    EXIT:
+    MAIN ENDP
+END MAIN

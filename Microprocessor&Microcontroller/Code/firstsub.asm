@@ -1,0 +1,13 @@
+;first sub
+.MODEL SMALL
+.STACK 100H
+.DATA
+.CODE
+MAIN PROC
+     MOV AH,2
+     MOV CH,5
+     SUB CH, AH
+     MOV AH, CH
+
+    MAIN ENDP
+END MAIN
