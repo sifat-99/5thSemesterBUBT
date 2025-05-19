@@ -25,7 +25,7 @@ void bestFit(int blockSize[], int blocks, int processSize[], int processes) {
         // If a suitable block was found
         if (bestIdx != -1) {
             allocation[i] = bestIdx;
-            blockSize[bestIdx] -= processSize[i];
+            blockSize[bestIdx] =0; // Mark this block as allocated
         }
     }
 

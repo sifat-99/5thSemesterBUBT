@@ -26,7 +26,8 @@ void worstFit(int blockSize[], int blocks, int processSize[], int processes) {
         // If a suitable block was found
         if (worstIdx != -1) {
             allocation[i] = worstIdx;
-            blockSize[worstIdx] -= processSize[i];
+            // blockSize[worstIdx] -= processSize[i];
+            blockSize[worstIdx] =0; // Mark this block as allocated
         }
     }
 

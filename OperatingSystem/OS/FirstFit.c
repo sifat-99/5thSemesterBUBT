@@ -13,11 +13,11 @@ void firstFit(int blockSize[], int blocks, int processSize[], int processes) {
 
     // Pick each process and find the first block that fits
     for (int i = 0; i < processes; i++) {
-        for (int j = 0; j < blocks; j++) { 
+        for (int j = 0; j < blocks; j++) {
             if (blockSize[j] >= processSize[i]) {
                 // Assign block j to process i
                 allocation[i] = j;
-                blockSize[j] -= processSize[i];
+                blockSize[j] = 0; // Mark this block as allocated
                 break; // move to the next process
             }
         }
